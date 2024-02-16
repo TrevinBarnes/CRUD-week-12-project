@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+    <script src="index.js"></script>
+</head>
+<body>
+    <!--CRUD = create, read, update, and delete-->
+    <div class="container">
+        <div class="col-sm"><!--should allow the page to work when shrunk-->
+            <div class="create"><!--group for the create section-->
+                <h1>Grocery List</h1>
+                <input type="text" class="form-control" id="list-input" placeholder="List Item"> <!--make different sections to plug in and delete-->
+                <br>
+                <!--create a category for text input and make it a list with ol-->
+            </div>
+            <button id="Enter_btn" class="btn btn-primary form-control">Enter</button>
+            <br>
+        </div>
+    </div>
+    <div class="container-fluid" >
+        <div class="col-sm">
+            <ul id="list" class="list-group list-group-flush list-group-action">
+                <li id= "list-item" class="list-group-item list-group-item-action">hello</li>
+                <li id= "list-item" class="list-group-item list-group-item-action">hi</li>
+                <li id= "list-item" class="list-group-item list-group-item-action">bye</li>
+            </ul>
+        </div> 
+    </div>
+                <div class="delete"><!--delete button needs to go next to the list items as well as an edit option-->
+                    <button id="Delete_btn">Delete</button>
+
+                </div>
+
+</body>
+</html>
